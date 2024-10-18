@@ -2,7 +2,7 @@ package org.example.Solutions;
 
 import java.util.*;
 
-public class twoSum {
+public class Two_Sum {
 /*1.
      Two Sum
      Solved
@@ -54,8 +54,8 @@ public class twoSum {
 
         for(int i = 0; i<nums.length;i++){
             map.put(nums[i],i);
-            if(nums[map[target-nums[i]]] + nums[i] == target){
-                return new int[]{i, map[target-nums[i]]};
+            if(nums[map.get(target-nums[i])] + nums[i] == target){
+                return new int[]{i, map.get(target-nums[i])};
             }
         }
         return new int[]{index, jIndex};
